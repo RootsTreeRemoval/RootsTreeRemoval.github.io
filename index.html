@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Style/Slider.css">
     <link rel="icon" href="pictures/logo2.png">
     <link rel="stylesheet" href="Style/Sytle2.css">
+    <script src="scripts/scripts.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roots website</title>
@@ -25,17 +26,19 @@
     
     <div class="Services" id="Ser">
         <p class="content2">Services</p>
-            <div class="M_services">Tree removal<br><img src="icons/i1.png" alt="" width="100%"></div>
+            <div class="M_services">Tree removal<br><br><img src="icons/i1.png" alt="" width="100%"></div>
             <div class="M_services">Stump grinding<br><img src="icons/i2.png" alt="" width="100%"></div>
-            <div class="M_services">Land clearing<br><img src="icons/i3.png" alt="" width="100%"></div>
+            <div class="M_services">Land clearing<br><br><img src="icons/i3.png" alt="" width="100%"></div>
             <div class="M_services">Tree pruning<br><br><img src="icons/i4.png" alt="" width="100%"></div>
             <div class="M_services">Licensed<br><br><img src="icons/i5.png" alt="" width="100%"></div>
             <div class="M_services">Insured<br><br><img src="icons/i6.png" alt="" width="100%"></div>
             <div class="M_services">Bonded<br><br><img src="icons/i7.png" alt="" width="100%"></div>
-            <div class="M_services">Free estimates<br><img src="icons/i8.png" alt="" width="100%"></div>
+            <div class="M_services">Free estimates<br><br><img src="icons/i8.png" alt="" width="100%"></div>
             <div class="M_services">Storms cleanup<br><img src="icons/i9.png" alt="" width="100%"></div>
             <div class="M_services">Limb ups<br><br><img src="icons/i10.png" alt="" width="100%"></div>
             <div class="M_services">Blackberry Removal<br><img src="icons/i11.png" alt="" width="100%"></div>
+            
+            
     </div>
 
     <div class="Work" id="Work">
@@ -55,30 +58,31 @@
     </div>
     </div>
 
-    <div class="media">
-            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F886221886953192%2F&show_text=false&width=267&t=0" width="300vh" height="200vh" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            <!-- Texto alternativo -->
+   <div class="media">
+           <center><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F886221886953192%2F&show_text=false&width=267&t=0" width="auto" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></center>
     </div>
 
     <div class="Contact" id="con">
+    
 
         <div class="form_M">
-            <form action="https://formsubmit.co/rootstreeremoval@gmail.com" method="POST">
-                <h2>Send us your message</h2>
-                <input class="TA" type="text" name="name" placeholder="Name"><br>
-
-                <input class="TA" type="email" name="email" placeholder="E-mail"><br>
-
-                <input class="TA" type="text" name="subject" placeholder="Subject"><br>
-
-                <label for="comments">Message</label><br>
-                <textarea name="comments" cols="35" rows="8"></textarea><br>
-
-                <input class="send" type="submit" value="Send" onclick="out()">
-
-                <input type="hidden" name="_next" value="https://rootstreeremoval.github.io">
-                <input type="hidden" name="_captcha" value="false">
-            </form>
+            <div class="form_M">
+                <form action="https://formsubmit.co/rootstreeremoval@gmail.com" method="POST">
+                    <h2>Send us your message</h2>
+                    <input class="TA" type="text" name="name" placeholder="Name"><br>
+    
+                    <input class="TA" type="email" name="email" placeholder="E-mail"><br>
+    
+                    <input class="TA" type="text" name="subject" placeholder="Subject"><br>
+    
+                    <label for="comments">Message</label><br>
+                    <textarea name="comments" cols="35" rows="8"></textarea><br>
+    
+                    <input class="send" type="submit" value="Send" onclick="out()">
+    
+                    <input type="hidden" name="_next" value="https://rootstreeremoval.github.io">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
         </div>
 
         <div class="Data">
@@ -91,7 +95,7 @@
 
     <footer>
         <div class="info">
-            <center><br><a href="https://www.facebook.com/profile.php?id=61567786854183&name=xhp_nt_"><img src="icons/facebook.png" alt="" width="5%"></a><br>Roots Tree Removal</center>
+            <center><br><a href="https://www.facebook.com/profile.php?id=61567786854183&name=xhp_nt_"><img src="icons/facebook.png" alt="" width="5%"><br>Roots Tree Removal</a></center>
         </div>
         <div class="info">
             <center>
@@ -130,7 +134,8 @@
 </html>
 
 <script>
-    document.querySelectorAll('nav a').forEach(anchor => {
+
+document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
@@ -139,10 +144,4 @@
         });
     });
 });
-
-function out(){
-    alert("Your message was sent correctly")
-}
-
-
 </script>
